@@ -6,7 +6,7 @@ resource "openstack_lb_pool_v2" "pools" {
 }
 
 resource "openstack_lb_member_v2" "members" {
-  count = len(var.members)
+  count = length(var.members)
 
   address       = var.members[count.index].address
   protocol_port = var.members[count.index].protocol_port
