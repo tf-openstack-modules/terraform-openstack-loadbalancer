@@ -14,5 +14,5 @@ module "pools" {
   protocol = var.pools[count.index].protocol
   lb_method = var.pools[count.index].lb_method
   listener_id = openstack_lb_listener_v2.listener.id
-  members = var.members
+  members = var.pools[count.index].members
 }
