@@ -12,6 +12,11 @@ variable "listeners" {
         name=string,
         protocol=string,
         lb_method=string
+        members=list(object({
+          address=string,
+          protocol_port=number,
+          subnet_id=string
+        }))
       }))
     })
   )

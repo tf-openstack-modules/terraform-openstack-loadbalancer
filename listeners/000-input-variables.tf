@@ -18,6 +18,11 @@ variable "pools" {
   type=list(object({
     name=string,
     protocol=string,
-    lb_method=string
+    lb_method=string,
+    members=list(object({
+      address=string,
+      protocol_port=number,
+      subnet_id=string
+    }))
   }))
 }

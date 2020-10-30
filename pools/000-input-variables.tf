@@ -13,3 +13,7 @@ variable "lb_method" {
 variable "listener_id" {
   type=string
 }
+
+variable "members" {
+  type = list(object({address=string, protocol_port=number, subnet_id=string}))
+}
