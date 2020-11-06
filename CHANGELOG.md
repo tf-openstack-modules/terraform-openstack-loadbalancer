@@ -1,3 +1,11 @@
+# [1.1.0](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/compare/v1.0.0...v1.1.0) (2020-11-06)
+
+
+### Features
+
+* **var:** add description on var ([1ec6bac](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/commit/1ec6bac05346be22fb67c0a00af409f287da7500))
+* **var:** add description, vip_address and admin state up ([24d6376](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/commit/24d6376a992dedb293610ddf9e1dd341dd3730ad))
+
 # 1.0.0 (2020-11-06)
 
 
