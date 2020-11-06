@@ -9,7 +9,7 @@ resource "openstack_lb_loadbalancer_v2" "lb" {
 }
 
 module "listeners" {
-  source = "./listeners"
+  source = "git@gitlab.com:loulou-bobi-action/terraform/openstack/modules/terraform-openstack-listeners.git"
   count = length(var.listeners)
 
   name = var.listeners[count.index].name
