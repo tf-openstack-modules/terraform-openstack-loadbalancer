@@ -1,8 +1,11 @@
 # Create loadbalancer
 resource "openstack_lb_loadbalancer_v2" "lb" {
-  name          = var.lb.name
-  vip_subnet_id = var.lb.subnet_id
-  security_group_ids = var.lb.security_group_ids
+  name          = var.name
+  vip_subnet_id = var.subnet_id
+  security_group_ids = var.security_group_ids
+  admin_state_up = var.admin_state_up
+  vip_address = var.vip_address
+  description = var.description
 }
 
 module "listeners" {

@@ -1,5 +1,29 @@
-variable "lb" {
-  type=object({name=string, subnet_id=string, security_group_ids=list(string)})
+variable "name" {
+  type=string
+}
+
+variable "subnet_id" {
+  type=string
+}
+
+variable "security_group_ids" {
+  type=list(string)
+  default=""
+}
+
+variable "admin_state_up" {
+  type=bool
+  default=true
+}
+
+variable "vip_address" {
+  type=string
+  default=""
+}
+
+variable "description" {
+  type=string
+  default=""
 }
 
 variable "listeners" {
