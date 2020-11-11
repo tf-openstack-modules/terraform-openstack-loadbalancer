@@ -10,7 +10,7 @@ variable "subnet_id" {
 
 variable "security_group_ids" {
   type=list(string)
-  default=""
+  default=[]
   description="A list of security group IDs to apply to the loadbalancer. The security groups must be specified by ID and not name (as opposed to how they are configured with the Compute Instance)."
 }
 
@@ -33,21 +33,6 @@ variable "description" {
 }
 
 variable "listeners" {
-  type=list(
-    object({
-      name=string,
-      protocol=string,
-      port=number,
-      pools=list(object({
-        name=string,
-        protocol=string,
-        lb_method=string
-        members=list(object({
-          address=string,
-          protocol_port=number,
-          subnet_id=string
-        }))
-      }))
-    })
-  )
+  type=list(any)
+  description="Listeners' list of this loadblancer"
 }
