@@ -10,7 +10,7 @@ resource "openstack_lb_loadbalancer_v2" "lb" {
 
 module "listeners" {
   source  = "app.terraform.io/Seedbox/listeners/openstack"
-  version = "1.0.1"
+  version = "1.0.2"
   count = length(var.listeners)
 
   name = var.listeners[count.index].name
