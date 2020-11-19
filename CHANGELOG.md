@@ -1,3 +1,10 @@
+## [1.1.2](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/compare/v1.1.1...v1.1.2) (2020-11-19)
+
+
+### Bug Fixes
+
+* call module from app terraform ([7ee758c](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/commit/7ee758cf065f587c584c5e1b5b13aa6bd3351b0e))
+
 ## [1.1.1](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/compare/v1.1.0...v1.1.1) (2020-11-13)
 
 
