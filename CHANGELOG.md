@@ -1,3 +1,10 @@
+## [1.1.3](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/compare/v1.1.2...v1.1.3) (2020-11-19)
+
+
+### Bug Fixes
+
+* call new version listeners module ([9a18d1d](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/commit/9a18d1d100c17a98a5358e6f75ffd2e29ab380fc))
+
 ## [1.1.2](https://gitlab.com/loulou-bobi-action/terraform/openstack/modules/terraform-openstack-loadbalancer/compare/v1.1.1...v1.1.2) (2020-11-19)
 
 
